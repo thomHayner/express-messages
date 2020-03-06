@@ -10,8 +10,17 @@ CREATE DATABASE messages;
 
 \c messages;
 
+-- CREATE TABLE "messages" (
+--   "id" integer NOT NULL AUTO_INCREMENT,
+--   "name" text NOT NULL ,
+--   "message" text NOT NULL,
+--   PRIMARY KEY ("id")
+-- );
+
 CREATE TABLE messages (
--- build your schema here
+  id SERIAL PRIMARY KEY,
+  names VARCHAR NOT NULL ,
+  messages VARCHAR NOT NULL
 );
 
 -- Seed your data with a collection of insert statements
